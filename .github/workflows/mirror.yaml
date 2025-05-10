@@ -20,5 +20,5 @@ jobs:
       run: |
           cd mobox-private-packages
           gh release create latest --title "mobox" --notes ""
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
