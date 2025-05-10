@@ -17,8 +17,7 @@ jobs:
       run: |
         git clone https://gitlab.com/XTx9dAvTpjiN/mobox-private-packages.git
     - name: Release
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
           cd mobox-private-packages
+          env: GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           gh release create latest --title "mobox" --notes ""
