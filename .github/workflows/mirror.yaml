@@ -20,5 +20,5 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-          cd gitlab-repo
+          cd mobox-private-packages
           gh release create latest --title "mobox" --notes ""
